@@ -1,50 +1,65 @@
-# Welcome to your Expo app 👋
+# CSAT Feedback & Thank You System (React Native + Expo Router)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This project is a **Customer Satisfaction (CSAT) Feedback System** built in **React Native** using **Expo (SDK 54)** and **Expo Router**.
 
-## Get started
+It was developed as an **on-site interview task**, focusing on:
+- clean UI
+- validation rules
+- conditional rendering
+- component reuse
+- API integration
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 🚀 Features
 
-2. Start the app
+### ✅ Feedback Screen
+- 1–5 **Star Rating**
+- If rating is **<= 3**, user must select a **feedback reason** (mandatory)
+- **Comments** input with **500 characters limit**
+- **Tags** multi-select (maximum **3 tags**)
+- Submit button enables only when inputs are valid
+- Stylish UI with **pink background + card design + customer icon**
 
-   ```bash
-   npx expo start
-   ```
+### ✅ Thank You Screen
+- Shows different message based on rating:
+  - **4–5**: Appreciation
+  - **1–3**: Apology + Support option
+- Displays user rating badge
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🧱 Tech Stack
+- React Native (Expo)
+- Expo Router (file-based navigation)
+- React Hook Form (form handling)
+- Zod (validation schema)
+- Axios (API calls)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## 📂 Folder Structure
 
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```txt
+csat-app/
+ ┣ app/
+ ┃ ┣ _layout.tsx
+ ┃ ┣ index.tsx
+ ┃ ┣ thankyou.tsx
+ ┃ ┗ modal.tsx
+ ┣ src/
+ ┃ ┣ api/
+ ┃ ┃ ┗ client.ts
+ ┃ ┣ components/
+ ┃ ┃ ┣ StarRating.tsx
+ ┃ ┃ ┗ TagChips.tsx
+ ┃ ┣ config/
+ ┃ ┃ ┗ csatConfig.ts
+ ┃ ┣ screens/
+ ┃ ┃ ┣ FeedbackScreen.tsx
+ ┃ ┃ ┗ ThankYouScreen.tsx
+ ┃ ┣ styles/
+ ┃ ┃ ┗ theme.ts
+ ┃ ┗ validation/
+ ┃   ┗ csatSchema.ts
+ ┗ package.json
