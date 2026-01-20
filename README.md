@@ -1,5 +1,8 @@
 # CSAT Feedback & Thank You System (React Native + Expo Router)
 
+## 🔗 Live Demo
+👉 **[Open CSAT Feedback System](https://csat-deepankar.netlify.app/)**
+
 This project is a **Customer Satisfaction (CSAT) Feedback System** built in **React Native** using **Expo (SDK 54)** and **Expo Router**.
 
 It was developed as an **on-site interview task**, focusing on:
@@ -66,6 +69,5 @@ csat-app/
 
 ---
 
-## 🔗 Live Demo
-[Click here to open the project](https://csat-deepankar.netlify.app/)
+
 
