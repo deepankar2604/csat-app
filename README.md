@@ -67,5 +67,5 @@ csat-app/
 ---
 
 ## 🔗 Live Demo
-https://csat-deepankar.netlify.app/
+[Click here to open the project](https://csat-deepankar.netlify.app/)
 
